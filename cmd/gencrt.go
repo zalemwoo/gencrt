@@ -51,8 +51,7 @@ func main() {
 		ips := strings.Split(ips, ",")
 		cfg.IPAddresses = make([]net.IP, len(ips))
 		for i, ip := range ips {
-			netip := net.ParseIP(strings.TrimSpace(ip))
-			cfg.IPAddresses[i] = netip
+			cfg.IPAddresses[i] = net.ParseIP(strings.TrimSpace(ip))
 		}
 	}
 
