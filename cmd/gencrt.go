@@ -16,7 +16,7 @@ var out string
 func init() {
 	flag.StringVar(&cn, "cn", "", "Common Name (required)")
 	flag.IntVar(&days, "days", 365, "Days")
-	flag.StringVar(&dnss, "dnss", "", "DNSNames (exp: \"www.example.com,*.example.com\")")
+	flag.StringVar(&dnss, "dnss", "", "DNSNames (exp: \"example.com,*.example.com\")")
 	flag.StringVar(&ips, "ips", "", "IPAddresses (exp: \"127.0.0.1,127.0.1.1\")")
 	flag.StringVar(&out, "out", "", "Filename without ext. if not provided, |cn| is used instead")
 }
